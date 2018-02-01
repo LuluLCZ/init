@@ -1,0 +1,1 @@
+netstat -rn | grep -A 2 "Internet:" | grep "default" | cut -d ' ' -f -13 | tr -d "default" | tr -d ' '

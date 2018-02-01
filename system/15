@@ -1,0 +1,2 @@
+kill <pid>
+#pid recupere avec ps aux | pgrep "name_process"

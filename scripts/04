@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ $(find /etc -mindepth 1 -maxdepth 1 -name "crontab" -mtime -1) ] ; then
+	echo "Fichier a ete modifie ces dernieres 24h" | mail -s "Modification crontab" root
+fi
